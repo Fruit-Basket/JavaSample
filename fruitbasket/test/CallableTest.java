@@ -14,7 +14,7 @@ public class CallableTest {
 	}
 	
 	/**
-	 * 测试FutrueTask的get方法会不会阻塞当前的现成。结果证明，会
+	 * 测试FutrueTask的get方法会不会阻塞当前的线程。结果证明，会
 	 */
 	public static void testFutureTaskGet(){
 		Callable<Integer> myCallable=new MyCallable();
@@ -33,6 +33,19 @@ public class CallableTest {
 		} catch (ExecutionException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		
+	}
+	
+	private static  class MyCallable implements Callable<Integer>{
+
+		@Override
+		public Integer call() throws Exception {
+			int result=0;
+			for(int i=0;i<1000000000;++i){
+				result+=i;
+			}
+			return result;
 		}
 		
 	}

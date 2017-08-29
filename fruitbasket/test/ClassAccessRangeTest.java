@@ -1,5 +1,7 @@
 package fruitbasket.test;
 
+
+
 public class ClassAccessRangeTest {
 
 	private static final ClassAccessRangeTest instance=new ClassAccessRangeTest();
@@ -23,5 +25,15 @@ public class ClassAccessRangeTest {
 		 * 不能 import fruitbasket.test.TestClass2
 		 */
 		//TestClass2 testClass2=new TestClass2();
+		
+		/*
+		 * 不能 import fruitbasket.test.TestClass3.InnerClass1
+		 */
+		//TestClass3.InnerClass1 class1;
+		
+		/*
+		 * 能import fruitbasket.test.TestClass3.InnerClass2，但是不能构造对象
+		 */
+		//TestClass3.InnerClass2 class2=new TestClass3.InnerClass2();
 	}
 }
