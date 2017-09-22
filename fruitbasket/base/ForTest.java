@@ -1,4 +1,4 @@
-package fruitbasket.test;
+package fruitbasket.base;
 
 /**
  * ForÑ­»·²âÊÔ
@@ -32,7 +32,7 @@ public class ForTest {
 		System.out.println();
 		
 		for(Element e:elements){
-			e.data=1;//
+			e.data=1;
 		}
 		
 		System.out.print("after change: ");//Êä³ö¡°11¡±

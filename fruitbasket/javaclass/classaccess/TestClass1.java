@@ -1,4 +1,4 @@
-package fruitbasket.test;
+package fruitbasket.javaclass.classaccess;
 
 /**
  * 用于类的访问范围和构造函数访问范围测试

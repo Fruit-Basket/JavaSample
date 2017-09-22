@@ -1,4 +1,4 @@
-package fruitbasket.test;
+package fruitbasket.collection;
 
 public class TreeTest {
 	

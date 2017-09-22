@@ -1,4 +1,4 @@
-package fruitbasket.test;
+package fruitbasket.thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -14,7 +14,8 @@ public class CallableTest {
 	}
 	
 	/**
-	 * 测试FutrueTask的get方法会不会阻塞当前的线程。结果证明，会
+	 * 测试FutrueTask的get方法会不会阻塞当前的线程。
+	 * 结果证明，会
 	 */
 	public static void testFutureTaskGet(){
 		Callable<Integer> myCallable=new MyCallable();

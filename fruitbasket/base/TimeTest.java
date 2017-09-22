@@ -1,15 +1,15 @@
-package fruitbasket.test;
+package fruitbasket.base;
 
 import java.util.Calendar;
 import java.util.Date;
 
-public class Time {
+public class TimeTest {
 
-	private static final Time	 instance=new Time();
+	private static final TimeTest	 instance=new TimeTest();
 	
-	private Time(){}
+	private TimeTest(){}
 	
-	public static Time getInstance(){
+	public static TimeTest getInstance(){
 		return instance;
 	}
 	

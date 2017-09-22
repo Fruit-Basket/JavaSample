@@ -1,4 +1,4 @@
-package fruitbasket.test;
+package fruitbasket.base;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -12,18 +12,18 @@ import java.io.IOException;
  * @author Study
  *
  */
-public class Store {
+public class DataStoreTest {
 
-	private static final Store instance=new Store();
+	private static final DataStoreTest instance=new DataStoreTest();
 	
-	private Store(){}
+	private DataStoreTest(){}
 	
-	public Store getInstance(){
+	public DataStoreTest getInstance(){
 		return instance;
 	}
 	
 	/**
-	 * 测试Java是地位存储还是高位存储
+	 * 测试Java是低位存储还是高位存储
 	 */
 	public static void testJavaStoreOrder(){
 		System.out.println("Store.testJavaStoreOrder()");

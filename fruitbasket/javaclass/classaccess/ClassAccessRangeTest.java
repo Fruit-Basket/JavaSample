@@ -1,6 +1,4 @@
-package fruitbasket.test;
-
-
+package fruitbasket.javaclass.classaccess;
 
 public class ClassAccessRangeTest {
 

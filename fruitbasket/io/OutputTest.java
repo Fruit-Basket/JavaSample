@@ -1,4 +1,4 @@
-package fruitbasket.test;
+package fruitbasket.io;
 
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
@@ -6,12 +6,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-public class Output {
+public class OutputTest {
 	
-	private static final Output instance=new Output();
-	private Output(){}
+	private static final OutputTest instance=new OutputTest();
+	private OutputTest(){}
 	
-	public Output getInstance(){
+	public OutputTest getInstance(){
 		return instance;
 	}
 

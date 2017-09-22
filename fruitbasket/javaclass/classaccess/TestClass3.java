@@ -1,4 +1,4 @@
-package fruitbasket.test;
+package fruitbasket.javaclass.classaccess;
 
 /**
  * 用于类的访问范围和构造函数访问范围测试
@@ -13,14 +13,12 @@ public class TestClass3 {
 	}
 	
 	private class InnerClass1{
-		
 		private InnerClass1(){
 			System.out.println("InnerClass1");
 		}
 	}
 	
 	public class InnerClass2{
-		
 		private InnerClass2(){
 			System.out.println("InnerClass2");
 		}
