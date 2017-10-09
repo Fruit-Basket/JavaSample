@@ -7,6 +7,6 @@ package fruitbasket.javaclass;
  * Email: FruitBasket@qq.com
  * GitHub: github.com/Fruit-Basket
  */
-public class test {
+public class Test {
 
 }

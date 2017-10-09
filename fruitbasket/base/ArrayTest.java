@@ -3,6 +3,11 @@ package fruitbasket.base;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
+/**
+ * Êı×é²âÊÔ
+ * @author FruitBasket
+ *
+ */
 public class ArrayTest {
 
 	private static final ArrayTest instance=new ArrayTest();
