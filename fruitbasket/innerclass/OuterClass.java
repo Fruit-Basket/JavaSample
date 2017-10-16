@@ -9,7 +9,9 @@ package fruitbasket.innerclass;
  */
 public class OuterClass {
 
-	private String name="outer class";
+	private String name="outer class";//辅助测试
+	
+	private float f=1.0f;//辅助测试
 	
 	public OuterClass(){
 		
@@ -40,4 +42,13 @@ public class OuterClass {
 			System.out.println(outerClass.name);
 		}
 	}
+
+	/**
+	 * 非静态内部类，不能包含静态方法
+	 */
+	/*class InnerClass1{
+		public static float func(){
+			return f;
+		}
+	}*/
 }

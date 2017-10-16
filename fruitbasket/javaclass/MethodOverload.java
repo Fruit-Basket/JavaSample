@@ -1,4 +1,4 @@
-package fruitbasket.object;
+package fruitbasket.javaclass;
 
 /**
  *
@@ -38,5 +38,33 @@ public class MethodOverload {
 	public void test1_help(Number n){
 		System.out.println("test1_help(Number)");
 	}
+	
+	/**
+	 * ²âÊÔÒ»ÖÖ·½·¨ÖØÔØ
+	 */
+	public static void test2(){
+		MethodOverload instance=new MethodOverload();
+		instance.test2_help('a');
+		/*
+		 * 
+		 */
+	}
+	
+	/**
+	 * ¸¨Öú²âÊÔ
+	 * @param value
+	 */
+	public void test2_help(int value){
+		System.out.println("test2_help(int)");
+	}
+	
+	/**
+	 * ¸¨Öú²âÊÔ
+	 * @param value
+	 */
+	public void test2_help(String value){
+		System.out.println("test2_help(String)");
+	}
+	
 
 }

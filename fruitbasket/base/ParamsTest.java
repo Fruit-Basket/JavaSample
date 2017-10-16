@@ -60,6 +60,9 @@ public class ParamsTest {
 		 */
 	}
 
+	/**
+	 * 如何联合test2()解释这个现状？///
+	 */
 	public static void test3(){
 		double value=0.9;
 		
@@ -75,8 +78,48 @@ public class ParamsTest {
 		 */
 	}
 	
+	/**
+	 * 测试char到整型的转换
+	 * 结果：char可以直接转换到整型。char和byte可以相互直接转换
+	 */
 	public static void test4(){
+		byte byte_v='a';
+		int int_v='a';
 		
+		char char_v=0x0F;
+	}
+	
+	/**
+	 * 测试：“==”是否可以用户判断int与Integer、Integer与Integer在所代表的数值上是否相等
+	 * 结果：可以
+	 */
+	public static void test5(){
+		int a=10;
+		Integer b=10;
+		Integer c=10;
+		
+		if(a==b){
+			System.out.println("a==b");
+		}
+		else{
+			System.out.println("a!=b");
+		}
+		
+		if(b==c){
+			System.out.println("b==c");
+		}
+		else{
+			System.out.println("b!=c");
+		}
+		
+		/*System.out.println("b.hashCode(): "+b.hashCode());
+		System.out.println("c.hashCode(): "+c.hashCode());*/
+		
+		/*
+		 * 输出结果：
+		 * a==b
+		 * b==c
+		 */
 	}
 	
 	
